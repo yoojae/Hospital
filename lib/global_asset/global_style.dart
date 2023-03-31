@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
-
 // Global Variable
 class GlobalStyle {
   // 색상 글로벌
-  static const Color bg2 = Color(0xFFEFF7F8);
+  static const Color bg = Color(0xFFEFF7F8);
   static const Color green = Color(0xFF099EAE);
   static const Color light_green = Color(0xFFCEEBEE);
   static const Color white = Color(0xFFFFFFFF);

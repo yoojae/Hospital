@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hospital/global_asset/global_style.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -6,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF089CAC),
+      backgroundColor: GlobalStyle.green,
       body: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -17,7 +18,7 @@ class HomePage extends StatelessWidget {
             flex: 5,
             child: Container(
               decoration: const BoxDecoration(
-                color: Color(0xFFe7F5F7),
+                color: GlobalStyle.bg,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(25),
                   bottomLeft: Radius.circular(25),
@@ -28,7 +29,7 @@ class HomePage extends StatelessWidget {
                   Container(
                     height: 70,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: GlobalStyle.white,
                       borderRadius: BorderRadius.circular(25),
                     ),                    ),
                   Row(
@@ -40,14 +41,14 @@ class HomePage extends StatelessWidget {
                             Container(
                               height: 200,
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: GlobalStyle.white,
                                 borderRadius: BorderRadius.circular(25),
                               ),
                             ),
                             Container(
                               height: 200,
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: GlobalStyle.white,
                                 borderRadius: BorderRadius.circular(25),
                               ),
                             ),
@@ -59,7 +60,7 @@ class HomePage extends StatelessWidget {
                         child: Container(
                           height: 500,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: GlobalStyle.white,
                             borderRadius: BorderRadius.circular(25),
                           ),
                         ),
@@ -69,7 +70,7 @@ class HomePage extends StatelessWidget {
                   Container(
                     height: 60,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                      color: GlobalStyle.white,
                     ),
                   ),
                 ],
