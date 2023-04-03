@@ -132,7 +132,7 @@ class HomePage extends StatelessWidget {
                                             Container(height: 8,),
                                             Text('27 years, California',
                                               style: TextStyle(
-                                                  color: GlobalStyle.light_gray,
+                                                  color: GlobalStyle.gray,
                                               ),
                                             ),
                                             Container(height: 42,),
@@ -281,39 +281,59 @@ class HomePage extends StatelessWidget {
                     // -------------------------Footer-----------------------------
                     Container(
                       margin: EdgeInsets.all(20),
-                      height: 60,
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      height: 56,
                       decoration: BoxDecoration(
                         color: GlobalStyle.white,
                         borderRadius: BorderRadius.circular(25),
                       ),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             children: [
                               TextButton(
-                                  onPressed: () {},
-                                  child: Text('Privacy Policy'),
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStatePropertyAll(Size.zero),
-                                  padding: MaterialStatePropertyAll(EdgeInsets.zero),
-                                  overlayColor: MaterialStatePropertyAll(Colors.transparent)
+                                onPressed: () {},
+                                child: Text('Privacy Policy',
+                                  style: TextStyle(
+                                    color: GlobalStyle.light_dark
+                                  ),
                                 ),
+                                style: TextButtonStyle
                               ),
+                              Container(width: 10,),
                               TextButton(
-                                  onPressed: () {},
-                                  child: Text('Terms of Use')
+                                onPressed: () {},
+                                child: Text('Terms of Use',
+                                  style: TextStyle(
+                                      color: GlobalStyle.light_dark
+                                  ),
+                                ),
+                                style: TextButtonStyle,
                               ),
                             ],
                           ),
                           Row(
                             children: [
                               Text('Copyright 2020 ',
+                                style: TextStyle(
+                                    color: GlobalStyle.gray
+                                ),
                               ),
                               TextButton(
-                                  onPressed: () {},
-                                  child: Text('XRay')
+                                onPressed: () {},
+                                child: Text('XRay',
+                                  style: TextStyle(
+                                    color: GlobalStyle.green
+                                  ),
+                                ),
+                                style: TextButtonStyle,
                               ),
-                              Text(' All Rights Reserved.')
+                              Text(' All Rights Reserved.',
+                                style: TextStyle(
+                                    color: GlobalStyle.gray
+                                ),
+                              )
                             ],
                           )
                         ],
@@ -406,7 +426,7 @@ class MyGoal extends StatelessWidget {
                     children: [
                       Text(type,
                         style: TextStyle(
-                          color: GlobalStyle.light_gray,
+                          color: GlobalStyle.gray,
                         ),
                       ),
                       Container(height: 8,),
@@ -424,7 +444,7 @@ class MyGoal extends StatelessWidget {
                     children: [
                       Text('My Goal',
                         style: TextStyle(
-                          color: GlobalStyle.light_gray,
+                          color: GlobalStyle.gray,
                         ),
                       ),
                       Container(height: 8,),
@@ -589,3 +609,8 @@ class MyGoal extends StatelessWidget {
   }
 }
 
+var TextButtonStyle = ButtonStyle(
+    minimumSize: MaterialStatePropertyAll(Size.zero),
+    padding: MaterialStatePropertyAll(EdgeInsets.zero),
+    overlayColor: MaterialStatePropertyAll(Colors.transparent)
+);

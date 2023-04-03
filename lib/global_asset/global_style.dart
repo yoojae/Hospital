@@ -15,4 +15,5 @@ class GlobalStyle {
   static const Color light_blue = Color(0xFF15D4FE);
   static const Color red = Color(0xFFDE504C);
   static const Color dark = Color(0xFF3F414D);
+  static const Color light_dark = Color(0xFF777D74);
   }
